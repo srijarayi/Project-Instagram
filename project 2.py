@@ -33,24 +33,6 @@ class insta:
         print("profile:-",self.d[username][5])
         print("request:-",self.d[username][6])
         
-        
-        
-        
-        
-    def sendmoney(self,username,reciever):
-       amount=int(input("enter the amount"))
-       while amount>self.d[username][2]:
-           print("Low balance")
-           amount=int(input("enter the amount"))
-       else:
-             self.d[username][2]>=amount
-             self.d[username][2]-=amount
-             self.d[reciever][2]+=amount
-             value=("i haven sent")+str(amount)+"rs to"+ reciever + " curr balance is "+ str(self.d[username][2])
-             self.d[username][3].append(value)
-             value=("i haven recieved")+str(amount)+"from"+ username + " curr balance is "+ str(self.d[reciever][2])
-             self.d[reciever][3].append(value)
-             print("Transaction successfull")
              
              
 class Account:
@@ -62,11 +44,7 @@ class Account:
         self.post=[0,[]]
         self.profile=[]
         self.request=[]
-        
-        
-        
-        
-        
+           
         
         
 #homepage
